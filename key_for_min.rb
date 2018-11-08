@@ -3,6 +3,7 @@
 
 def key_for_min_value(name_hash)
   cost = nil
+  least_expensive = ''
   name_hash.each do |item, value|
     if !cost
       cost = value
