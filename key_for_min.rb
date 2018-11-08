@@ -5,9 +5,10 @@ def key_for_min_value(name_hash)
   smallest = nil
   name_hash.each do |item, value|
     if !smallest
-      smallest = value
+      smallest = item
+      minimum = value
     else
-      if value < smallest
+      if value < minimum
         smallest = item
       end
     end
